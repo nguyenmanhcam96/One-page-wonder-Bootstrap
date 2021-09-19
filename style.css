@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    min-height: 1200px;
+}
+a {
+    text-decoration: none;
+}
+
+.text-content h3 {
+    font-weight: 800;
+}
+.banner {
+    width: 100%;
+    height: auto;
+    min-height: 900px;
+    background-image: url('./images/bg.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(0,0,0,0.6);
+   
+}
+.mobile-menu {
+    display: none;
+}
+.logo, .menu a {
+    color: #fff !important;
+    font-weight: 700;
+    
+}
+.heading-banner {
+    color: #fff;
+    width: 50%;
+    height: auto;
+    top: 50%;
+}
+.heading-banner h1 {
+    font-size: 70px;
+    font-weight: 800;
+}
+.heading-banner h2 {
+    font-size: 40px;
+    font-weight: 750;
+}
+.heading-banner h1 + h2 {
+    font-weight: bolder;
+}
+.learn-more-btn {
+    top: 65%;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    background-color: #ee0979;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50px;
+    font-weight: bold;
+    display: block;
+}
+footer {
+    background-color: rgba(0,0,0,1);
+    color: #fff;
+    height: 100px;
+    line-height: 100px;
+}
+@media screen and (max-width: 767px) {
+
+    .menu {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex;
+        position: absolute;
+        right: 0;
+    }
+    .mobile-menu a {
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        display: block !important;
+    }
+    .sub-menu {
+        display: none !important;
+    }
+    .mobile-menu a i {
+        font-size: 25px;
+        color: #fff;
+        opacity: 0.7;
+    }
+    .sub-menu a {
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+    }
+    .mobile-menu > a {
+        width: 100px;
+        height: auto;
+        text-align: center;
+    }
+    .heading-banner {
+        width: 100%;
+        text-align: center;
+        top: 75%;
+    }
+    .heading-banner h1 {
+        font-size: 50px;
+    }
+    .heading-banner h2 {
+        font-size: 30px;
+    }
+    .col-reverse {
+        flex-direction: column-reverse !important;
+    }
+    .text-content {
+        align-items: center !important;
+        text-align: center !important;
+        margin-top: 50px;
+        
+    }
+    .img-side {
+        display: flex;
+        justify-content: center;
+    }
+    .toggle {
+        display: block !important;
+        animation: fadein 0.5s ease-in;
+    }
+    .ml-mobile-0  {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 405px) {
+    .navbar-mobile-width {
+        width: 100px !important;
+    }
+}
